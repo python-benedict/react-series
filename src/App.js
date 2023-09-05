@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Children1 heroName="Benedict" nickName="Sefa">
         <p>Hello love of my life</p>
-        <div>Hello oay of my life</div>
+        <div>Hello oay of my lie</div>
       </Children1>
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
