@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Children, Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
@@ -8,11 +8,15 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBinding from './components/EventBinding';
+import Children1 from './components/Children1';
 
 function App() {
   return (
     <div className="App">
-      <EventBinding />
+      <Children1 heroName="Benedict" nickName="Sefa">
+        <p>Hello love of my life</p>
+        <div>Hello oay of my life</div>
+      </Children1>
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
       {/* <Greet name="Jikla" heroName="Steve Jobs"/> */}
