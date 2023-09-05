@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
 
-export class classClick extends Component {
+export class ClassClick extends Component {
+    clickHandler() {
+        console.log("I was clicked")
+    }
   render() {
     return (
-      <div>classClick</div>
+      <div>
+        <button onClick={this.clickHandler}>Click Me</button>
+      </div>
     )
   }
 }
 
-export default classClick
+export default ClassClick

@@ -1,5 +1,6 @@
-rce
-rfce
+rce    - for class component
+rfce   - for functional component
+rconst - for constractor
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
