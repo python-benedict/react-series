@@ -7,12 +7,14 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBinding from './components/EventBinding';
 
 function App() {
   return (
     <div className="App">
+      <EventBinding />
       {/* <FunctionClick /> */}
-      <ClassClick />
+      {/* <ClassClick /> */}
       {/* <Greet name="Jikla" heroName="Steve Jobs"/> */}
       {/* <Welcome name="Benedict" heroName="Linux"/> */}
     </div>
