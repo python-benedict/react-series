@@ -22,7 +22,7 @@ function PeopleList() {
             names: 'Osei'
         },
     ]
-    const pepleList = people.map(p => <People prop={p} />)
+    const pepleList = people.map(p => <People key={p.id} prop={p} />)
   return (
     <div>{pepleList}</div>
   )
