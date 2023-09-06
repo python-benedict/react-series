@@ -13,10 +13,11 @@ import Children1 from './components/Children1';
 function App() {
   return (
     <div className="App">
-      <Children1 heroName="Benedict" nickName="Sefa">
+      
+      {/* <Children1 heroName="Benedict" nickName="Sefa">
         <p>Hello love of my life</p>
         <div>Hello oay of my lie</div>
-      </Children1>
+      </Children1> */}
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
       {/* <Greet name="Jikla" heroName="Steve Jobs"/> */}
