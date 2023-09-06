@@ -10,9 +10,15 @@ class Form extends Component {
       }
     }
 
-    formChangeHandler(event){
+    // formChangeHandler(event){
+    //     this.setState({
+    //         username : event.target.value
+    //     })
+    // }
+
+    formChangeHandler = (event) =>{
         this.setState({
-            username : event.target.value
+            username: event.target.value
         })
     }
 
@@ -21,7 +27,7 @@ class Form extends Component {
       <form>
         <div>
             <label>Username: </label>
-            <input type='text' value={this.state.username}  />
+            <input type='text' value={this.state.username} onChange={this.formChangeHandler} />
         </div>
       </form>
     )
