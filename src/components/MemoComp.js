@@ -1,9 +1,10 @@
 import React from 'react'
 
-function MemoComp() {
+function MemoComp({names}) {
+    console.log('rendering memo component')
   return (
-    <div>MemoComp</div>
+    <div>MemoComp {names}</div>
   )
 }
 
-export default MemoComp
+export default React.memo(MemoComp)
