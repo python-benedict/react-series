@@ -12,11 +12,12 @@ import Children1 from './components/Children1';
 import ParentComponent from './components/ParentComponent';
 import ChildComponent from './components/ChildComponent';
 import UserGreetings from './components/UserGreetings';
+import NameList from './components/NameList';
 
 function App() {
   return (
     <div className="App">
-    <UserGreetings />
+    <NameList />
       {/* <Children1 heroName="Benedict" nickName="Sefa">
         <p>Hello love of my life</p>
         <div>Hello oay of my lie</div>
