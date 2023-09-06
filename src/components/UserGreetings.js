@@ -11,12 +11,24 @@ export class UserGreetings extends Component {
     }
 
   render() {
-    return (
-        this.state.isLogin ?
-      <div>Hello Benedict</div> :
-      <div>Hi Kwabena Sefa</div>
-    )
+    if(this.state.isLogin){
+        return (
+            <div>hi pam</div>
+        )
+    }else{
+        return(
+            <div>Hello Dauther inlaw</div>
+        )
+    }
+    
   }
+//   render() {
+//     return (
+//         this.state.isLogin ?
+//       <div>Hello Benedict</div> :
+//       <div>Hi Kwabena Sefa</div>
+//     )
+//   }
 }
 
 export default UserGreetings
