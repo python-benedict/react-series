@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RegComp from './RegComp'
 import PureComp from './PureComp'
+import MemoComp from './MemoComp'
 
 export class ParentComp extends Component {
 
@@ -15,18 +16,19 @@ export class ParentComp extends Component {
     componentDidMount = () =>{
         setInterval(()=>{
             this.setState({
-                names: 'Osei'
+                names: 'Benedict'
             })
-        }, 2000)
+        }, 4000)
     }
 
   render() {
     console.log('*****Parent Component********')
     return (
       <React.Fragment>
-        Parent Comp
-        <RegComp names={this.state.names}></RegComp>
-        <PureComp names={this.state.names}></PureComp>
+        <MemoComp names={this.state.names}></MemoComp>
+        {/* Parent Comp */}
+        {/* <RegComp names={this.state.names}></RegComp> */}
+        {/* <PureComp names={this.state.names}></PureComp> */}
       </React.Fragment>
     )
   }
