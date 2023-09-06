@@ -1,12 +1,12 @@
 import React, { Children, Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Form from './components/Form';
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
     <div className="App">
-    <Form />
+    <ParentComp />
       {/* <Children1 heroName="Benedict" nickName="Sefa">
         <p>Hello love of my life</p>
         <div>Hello oay of my lie</div>
