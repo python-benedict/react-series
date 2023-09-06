@@ -7,13 +7,13 @@ export class ParentComponent extends Component {
       super(props)
     
       this.state = {
-         parentName : 'Benedict'
+         parentName : 'Rita Asante'
       }
       this.greetParent = this.greetParent.bind(this)
     }
 
-    greetParent(){
-        alert(`Hello ${this.state.parentName}`)
+    greetParent(...childName){
+        alert(`Hi ${this.state.parentName} from ${childName}`)
     }
 
   render() {

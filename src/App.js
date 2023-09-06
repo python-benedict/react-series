@@ -10,11 +10,12 @@ import ClassClick from './components/ClassClick';
 import EventBinding from './components/EventBinding';
 import Children1 from './components/Children1';
 import ParentComponent from './components/ParentComponent';
+import ChildComponent from './components/ChildComponent';
 
 function App() {
   return (
     <div className="App">
-      <ParentComponent />
+    <ParentComponent />
       {/* <Children1 heroName="Benedict" nickName="Sefa">
         <p>Hello love of my life</p>
         <div>Hello oay of my lie</div>
