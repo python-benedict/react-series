@@ -8,6 +8,7 @@ export class ParentComponent extends Component {
       this.state = {
          parentName : 'Benedict'
       }
+      this.greetParent = this.greetParent.bind(this)
     }
 
     greetParent(){
