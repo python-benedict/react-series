@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ChildComponent from './ChildComponent'
 
 export class ParentComponent extends Component {
 
@@ -17,7 +18,9 @@ export class ParentComponent extends Component {
 
   render() {
     return (
-      <div>ParentComponent</div>
+      <div>
+        <ChildComponent greetHandler={this.greetParent} />
+      </div>
     )
   }
 }
