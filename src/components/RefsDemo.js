@@ -12,11 +12,16 @@ class RefsDemo extends Component {
         this.inputRef.current.focus() 
     }
 
+    handleSubmit = () =>{
+        alert(this.inputRef.current.value)
+    }
+
   render() {
     return (
-      <div>
+      <React.Fragment>
         <input type='text' ref={this.inputRef} />
-      </div>
+        <button onClick={this.handleSubmit} >Click</button>
+      </React.Fragment>
     )
   }
 }
