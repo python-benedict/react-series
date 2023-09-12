@@ -5,13 +5,13 @@ import Button from './Button'
 
 function ParentComponent() {
     const [age, setAge] = useState(25)
-    const [salary, setSalary] = useState(1000)
+    const [salary, setSalary] = useState(50000)
 
     const IncreaseAge =() =>{
         setAge(age + 1)
     }
     const IncreaseSalary =() =>{
-        setAge(salary + 1)
+        setSalary(salary + 1000)
     }
 
   return (
