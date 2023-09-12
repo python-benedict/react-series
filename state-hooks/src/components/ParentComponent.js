@@ -7,6 +7,12 @@ function ParentComponent() {
     const [age, setAge] = useState(25)
     const [salary, setSalary] = useState(1000)
 
+    const IncreaseAge =() =>{
+        setAge(age + 1)
+    }
+    const IncreaseSalary =() =>{
+        setAge(salary + 1)
+    }
 
   return (
     <div>
